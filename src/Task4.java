@@ -7,10 +7,11 @@ public class Task4 {
         if (test(number)) {
             System.out.println("Number - " + number + " is even");
         }
-        if (test2(number)) {
+        else {
             System.out.println("Number - " + number + " is uneven");
         }
-    }
+        }
+
 
 
     public static boolean test(int number) {
@@ -18,8 +19,4 @@ public class Task4 {
         return test;
     }
 
-    public static boolean test2(int number) {
-        boolean test = number % 2 != 0;
-        return test;
     }
-}
