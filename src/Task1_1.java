@@ -15,28 +15,33 @@ public class Task1_1 {
     public static void main(String[] args) {
         int firstOperand = 15;
         int secondOperand = 12;
-        String operation1 = "multiplication";
-        String operation2 = "dividing";
-        String operation3 = "addition";
-        String operation4 = "subtraction";
-        String operation5 = "remainder of the dividing";
-        String operation6 = "determination of the module";
+        String operation = "rest of dividing";
+
         int resultOperation1 = operation1(firstOperand, secondOperand);
         double resultOperation2 = operation2(firstOperand, secondOperand);
         int resultOperation3 = operation3(firstOperand, secondOperand);
         int resultOperation4 = operation4(firstOperand, secondOperand);
         int resultOperation5 = operation5(firstOperand, secondOperand);
-        int module1 = Math.abs(firstOperand);
-        int module2 = Math.abs(secondOperand);
-        System.out.println("Result of " + operation1 + " is " + resultOperation1);
-        System.out.println("Result of " + operation2 + " is " + resultOperation2);
-        System.out.println("Result of " + operation3 + " is " + resultOperation3);
-        System.out.println("Result of " + operation4 + " is " + resultOperation4);
-        System.out.println("Result of " + operation5 + " is " + resultOperation5);
-        System.out.println("Modul of firstOperand is " + module1);
-        System.out.println("Modul of secondOperand is " + module2);
-    }
 
+        if (operation == "multiplication") {
+            System.out.println("Result of " + operation + " is " + resultOperation1);}
+        if (operation == "dividing") {
+                System.out.println("Result of " + operation + " is " + resultOperation2);
+            }
+        if (operation == "addition") {
+                System.out.println("Result of " + operation + " is " + resultOperation3);
+            }
+        if (operation == "subtraction") {
+                System.out.println("Result of " + operation + " is " + resultOperation4);
+            }
+        if (operation == "rest of dividing") {
+                System.out.println(operation + " is " + resultOperation5);
+            }
+        if (operation == "module") {
+                System.out.println("Modules are " + Math.abs(firstOperand) + " " + Math.abs(secondOperand));
+            }
+
+    }
 
     public static int operation1(int firstOperand, int secondOperand) {
         int resultOperation1 = firstOperand * secondOperand;
