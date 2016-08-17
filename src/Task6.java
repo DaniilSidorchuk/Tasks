@@ -8,31 +8,15 @@ public class Task6 {
         int ten = 10;
         int a = ten - number1;
         int b = ten - number2;
-        if (a ==b ){
+        int a1 = Math.abs(a);
+        int b1 = Math.abs(b);
+        if (a == b) {
             System.out.println("Number " + number1 + " is equally close to " + ten + " as number " + number2);
         }
-        if (a >= 0 && b >= 0) {
-            if (a < b) {
-                System.out.println("Number " + number1 + " is closer to " + ten + " than " + number2);
-            } if (a>b) { System.out.println("Number " + number2 + " is closer to " + ten + " than " + number1);
-        }}
-        if (a < 0 && b < 0) {
-            if (a > b) {
-                System.out.println("Number " + number1 + " is closer to " + ten + " than " + number2);
-            } if (a<b) { System.out.println("Number " + number2 + " is closer to " + ten + " than " + number1);
-        }}
-        if (a < 0 && b > 0) {
-            a = a * -1;
-            if (a < b) {
-                System.out.println("Number " + number1 + " is closer to " + ten + " than " + number2);
-            } if (a>b) { System.out.println("Number " + number2 + " is closer to " + ten + " than " + number1);
-        }}
-        if (a > 0 && b < 0) {
-            b = b * -1;
-            if (a < b) {
-                System.out.println("Number " + number1 + " is closer to " + ten + " than " + number2);
-            } if (a>b) { System.out.println("Number " + number2 + " is closer to " + ten + " than " + number1);
-        }}
+        if (a1 < b1) {
+            System.out.println("Number " + number1 + " is closer to " + ten + " than " + number2);
+        }
+        else System.out.println("Number " + number2 + " is closer to " + ten + " than " + number1);
 
+        }
     }
-}
