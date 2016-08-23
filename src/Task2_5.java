@@ -18,11 +18,11 @@ public class Task2_5 {
         x[10]=88;
         int y = 0;
         int sum = 0;
-        int i = 0;
 
-        while (i <= n){
+
+        for (int i=0;i <= n; i++){
         y = y + x[i];
-            i++;
+
             if (i == n) {
                sum = y ;
                 break;
