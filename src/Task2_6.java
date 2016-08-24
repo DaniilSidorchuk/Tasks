@@ -12,7 +12,7 @@ public class Task2_6 {
         while (i < x.length && b < x.length) {
             if (x[b] <= x[i]) {
                 if (i == x.length - 1) {
-                    System.out.println(x[b]);
+                    System.out.println("Minimum number is " + x[b]);
                     break;
                 }
                 if (i < x.length) {
@@ -29,7 +29,7 @@ b = 0;
         while (i < x.length && b < x.length) {
             if (x[b] >= x[i]) {
                 if (i == x.length - 1) {
-                    System.out.println(x[b]);
+                    System.out.println("Maximum number is " + x[b]);
                     break;
                 }
                 if (i < x.length) {
