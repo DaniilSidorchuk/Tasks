@@ -1,3 +1,4 @@
+import java.lang.ArrayIndexOutOfBoundsException;
 /**
  - Найти минимальный и максимальный элемент массива
  */
@@ -16,8 +17,41 @@ public class Task2_6 {
         x[9] = 12;
         x[10] = 88;
         x[11] = 1;
-        x[12] = 555;
 
+        int b = 0;
+        int i = 0;
+        while (i < x.length && b < x.length) {
+            if (x[b] <= x[i]) {
+                if (i == 11) {
+                    System.out.println(x[b]);
+                    break;
+                }
+                if (i < x.length) {
+                    i++;
+                }
+
+
+            } else if (b < x.length) {
+                b++;
+            }
+        }
+i = 0;
+b = 0;
+        while (i < x.length && b < x.length) {
+            if (x[b] >= x[i]) {
+                if (i == 11) {
+                    System.out.println(x[b]);
+                    break;
+                }
+                if (i < x.length) {
+                    i++;
+                }
+
+            } else if (b < x.length) {
+                b++;
+            }
+
+        }
 
     }
 }
