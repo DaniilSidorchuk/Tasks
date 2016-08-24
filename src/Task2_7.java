@@ -20,7 +20,7 @@ public class Task2_7 {
             if (test2(x[i])){
                 y = y + x[i];}
             i++;}
-                       
+
         System.out.println("Total amount of all odd numbers is " + y);
         }
 
