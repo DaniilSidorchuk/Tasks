@@ -10,31 +10,21 @@ public class Task2_7 {
         boolean test2 = test2(x[i]);
 
         while ( i < x.length){
-            if (test1(x[i]) == true){
-                y = y + x[i];
-                i++;
-
-            }
-else i++;
-            if (i == x.length - 1){
-                System.out.println("Total amount of all even numbers is " + y);
-                break;
-            }
-        }
+            if (test1(x[i])){
+                y = y + x[i];}
+            i++;}
+        System.out.println("Total amount of all even numbers is " + y);
         y=0;
         i=0;
         while ( i < x.length){
-            if (test2(x[i]) == true){
-                y = y + x[i];
-                i++;
-            }
-            else i++;
-            if (i == x.length - 1){
-                System.out.println("Total amount of all odd numbers is " + y);
-                break;
-            }
+            if (test2(x[i])){
+                y = y + x[i];}
+            i++;}
+                       
+        System.out.println("Total amount of all odd numbers is " + y);
         }
-    }
+
+
 
     public static boolean test1 (int d ){
         int test = x[i]%2;
