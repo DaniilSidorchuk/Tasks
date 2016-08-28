@@ -3,7 +3,7 @@
  */
 public class Task2_9 {
     public static void main(String[] args) {
-        int number = 100;
+        int number = 99;
         int [] x = new int [100];
         int i = 0;
 
@@ -12,20 +12,22 @@ public class Task2_9 {
 
             if (number == 0){
                 x[i] = 1;
-                System.out.println(x[i]);
                 break;
             }
             if (test(number) ){
                 x[i] = 0;
             }
             else x[i] = 1;
-            System.out.println(x[i]);
             number = number/2;
             i++;
 
 
         }
+while (i>0){
+    i--;
+    System.out.print(x[i]);
 
+}
 
     }
 
